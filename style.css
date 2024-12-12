@@ -57,3 +57,8 @@ main {
 .open-button:hover {
     background-color: #45a049;
 }
+
+.preview {
+    width: 100%;
+    height: auto;
+}
