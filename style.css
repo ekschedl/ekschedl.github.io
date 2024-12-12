@@ -2,22 +2,58 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
+
+main {
+    padding: 20px;
+    text-align: center;
 }
-ul {
-    list-style: none;
-    padding: 0;
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
 }
-li {
-    margin: 10px 0;
+
+.card:hover {
+    transform: scale(1.05);
 }
-a {
-    text-decoration: none;
-    color: #0078d7;
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.open-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+.open-button:hover {
+    background-color: #45a049;
 }
