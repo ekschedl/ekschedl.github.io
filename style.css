@@ -17,6 +17,11 @@ main {
     text-align: center;
 }
 
+.wrapper{
+    display: flex;
+
+}
+
 .card {
     background-color: white;
     border-radius: 8px;
