@@ -14,35 +14,20 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <title>02. JS Array & Objects</title>
-    <script src="02_to_do_list.js" defer></script>
-
+    <title>07. Result</title>
   </head>
   <body class="bg-dark text-light">
     <div class="container w-50 pt-5">
-      <h1>To Do List</h1>
+      <h1>Список пользователей</h1>
       <input
         type="text"
         class="form-control mb-2"
-        placeholder="Enter what needs to be done "
-        id="title"
-        
+        placeholder="Имя пользователя"
+        id="filter"
       />
-      <button class="btn btn-outline-info w-100 mb-2" id="create">
-        Add
-      </button>
 
-      <ul class="list-group list-group-flush" id="list">
-        <!-- <li
-          class="list-group-item d-flex justify-content-between align-items-center"
-        >
-          <span>Название</span>
-          <span>
-            <span class="btn btn-small btn-success">&check;</span>
-            <span class="btn btn-small btn-danger">&times;</span>
-          </span>
-        </li> -->
-      </ul>
+      <ul class="list-group list-group-flush" id="list"></ul>
     </div>
+    <script src="user_list.js"></script>
   </body>
 </html>
