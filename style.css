@@ -1,85 +1,69 @@
-/* Menu styles */
-nav {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-#menuToggle {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#menu {
-    list-style: none;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    position: absolute;
-    background-color: #333;
-    top: 40px;
-    right: 0;
-    width: 150px;
-    display: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f4f4f9;
 }
 
-#menu.hidden {
-    display: none;
-}
-
-#menu li {
-    margin: 0;
-}
-
-#menu li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #fff;
-    border-bottom: 1px solid #444;
-}
-
-#menu li a:hover {
-    background-color: #575757;
-}
-
-/* Card styles remain the same */
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+header {
+    background-color: #4CAF50;
+    color: white;
     padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.wrapper{
+    display: flex;
+
 }
 
 .card {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
-    width: 250px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.card h3 {
-    margin: 10px 0;
-}
-
-.card img.preview {
-    max-width: 100%;
+.card-image {
+    width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
-.card a {
-    text-decoration: none;
-    color: #007bff;
+.open-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
 }
 
-.card a:hover {
-    text-decoration: underline;
+.open-button:hover {
+    background-color: #45a049;
+}
+
+.preview {
+    width: 100%;
+    height: auto;
 }
