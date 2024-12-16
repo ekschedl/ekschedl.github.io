@@ -54,19 +54,17 @@ body {
 }
 
 .header {
-    width: 100%;
+    width: 80%;
     height: 80px;
-
-    position: fixed;
+    position: relative;
     padding: 15px;
     top: 0;
-    left: 0;
     z-index: 5;
-
-    background-color: steelblue;
+    background-color:  #4CAF50;
     box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    margin: 0 auto;
 }
 
 .header-input {
