@@ -6,10 +6,10 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
+        background-color: #4CAF50;
+        color: white;
+        padding: 20px;
+        text-align: center;
 }
 
 main {
@@ -48,22 +48,30 @@ main {
     margin-bottom: 15px;
 }
 
-.open-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
+.card {
+    border: 1px solid #ddd;
     border-radius: 5px;
     cursor: pointer;
+    padding: 15px;
+    width: 250px;
     text-align: center;
     font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.open-button:hover {
-    background-color: #45a049;
+.card h3 {
+    margin: 10px 0;
 }
 
-.preview {
-    width: 100%;
+.card img.preview {
+    max-width: 100%;
     height: auto;
+    margin-bottom: 10px;
+}
+.card a {
+    text-decoration: none;
+    color: #007bff;
+}
+.card a:hover {
+    text-decoration: underline;
 }
