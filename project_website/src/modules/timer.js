@@ -54,5 +54,6 @@ const timer = (deadline) => {
     }, 1000);
   }
 };
-
+const deadline = "2025-31-31T23:59:59";  // Set your deadline here
+timer(deadline);
 export default timer;
