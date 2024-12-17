@@ -159,7 +159,7 @@ img {
  .header-wrapper {
     display: flex;
     flex-direction: column;
-    background-image: url("/images/main-small-screen-empty.svg");
+    background-image: url("/website_chess/images/main-small-screen-empty.svg");
     background-size: cover;
     
 } 
@@ -488,7 +488,7 @@ img {
 
 .carousel-item {
     min-width: 100%;
-    background-image: url(/images/copper_beige.png);
+    background-image: url(/website_chess/images/copper_beige.png);
     background-size: cover;
     background-position: center;
     padding: 62px 24px 0 20px;
@@ -709,7 +709,7 @@ footer .div-down {
   
     /**Header responsive min-width: 836px **/
     .header-wrapper {
-        background-image: url(/images/main-media-screen.svg);
+        background-image: url(/website_chess/images/main-media-screen.svg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -863,7 +863,7 @@ footer .div-down {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        background-image: url(/images/copper_beige.png);
+        background-image: url(/website_chess/images/copper_beige.png);
         background-size: cover;
         background-position: center;
         margin-bottom: 0;
@@ -992,7 +992,7 @@ footer .div-down {
     }
 
     .header-wrapper {
-        background-image: url(/images/main-big-screen.svg);
+        background-image: url(/website_chess/images/main-big-screen.svg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
