@@ -1,5 +1,3 @@
-import { log } from "neo-async";
-
 const timer = (deadline) => {
   const timerHours = document.getElementById("timer-hours");
   const timerMinutes = document.getElementById("timer-minutes");
@@ -17,6 +15,7 @@ const timer = (deadline) => {
     const formattedMinutes = String(minutes).padStart(2, "0");
     const formattedSeconds = String(seconds).padStart(2, "0");
 
+    console.log('Time Remaining:', timeRemaining);  // Выводим оставшееся время
     return {
       timeRemaining,
       formattedHours,
