@@ -7,7 +7,7 @@ import slider from "./modules/slider";
 import swiper from "./modules/swiper";
 import sendForm from "./modules/sendForm";
 
-timer("2025-04-21T21:36:00");
+timer("2025-01-31T21:36:00");
 menu();
 modal();
 calc(100);
