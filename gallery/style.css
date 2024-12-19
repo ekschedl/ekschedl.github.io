@@ -102,7 +102,7 @@ h2 {
 }
 
 .swiper-pagination-bullet:hover {
-    background-color: #faee03 !important; 
+    background-color: #f1d87f !important; 
 }
 
 
@@ -113,5 +113,5 @@ h2 {
 }
 
 .swiper-button-next:hover, .swiper-button-prev:hover {
-    color: #faee03 !important; 
+    color: #f1d87f !important; 
 }

@@ -36,27 +36,30 @@ fetch(`https://api.unsplash.com/photos?client_id=${accessKey}`)
     .then(response => response.json())
     .then(data => {
         data.forEach(photo => {
-            // Unsplash
+            
             const slideHTML = `
                 <div class="swiper-slide">
                     <img src="${photo.urls.regular}" alt="${photo.alt_description}" style="object-fit: cover;">
                     <p class="author">Photo by <a href="${photo.user.links.html}" target="_blank">${photo.user.name}</a> on Unsplash</p>
                 </div>
             `;
-            swiper.appendSlide(slideHTML); // Add slide to Swiper
-        });
+            swiper.appendSlide(slideHTML); 
 
-        swiper.update(); // Update Swiper after adding the slides
+       
+            const imgElement = document.querySelector(`img[src="${photo.urls.regular}"]`);
+            imgElement.addEventListener('click', () => {
+                triggerDownload(photo.urls.full); 
+            });
+        });
     })
     .catch(error => console.error('Error:', error));
 
-// Pause autoplay on mouse enter, resume on mouse leave
-const swiperWrapper = document.querySelector('.swiper-wrapper');
 
-swiperWrapper.addEventListener('mouseenter', () => {
-    swiper.autoplay.stop(); // Stop autoplay when mouse enters the swiper
-});
-
-swiperWrapper.addEventListener('mouseleave', () => {
-    swiper.autoplay.start(); // Start autoplay when mouse leaves the swiper
-});
+function triggerDownload(imageUrl) {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = imageUrl;
+    downloadLink.download = ''; 
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink); 
+}
